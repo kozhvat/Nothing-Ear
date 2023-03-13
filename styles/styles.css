@@ -1,6 +1,7 @@
 html {
   /* 10px */
   /* font-size: 62.5%; */
+  min-width: 1400px;
   scroll-behavior: smooth;
 }
 body {
@@ -23,7 +24,13 @@ p,
 a {
   box-sizing: border-box;
 }
-.block-center {
+.center-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.center-margin {
   margin: 0 auto;
 }
 .text-center {
@@ -43,13 +50,24 @@ a {
 .nav-item:not(:last-child) {
   /* padding-right: 43px; */
 }
-.universal-header {
+.universal-nav-header {
   font-size: 17px;
   line-height: 22px;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
   /* letter-spacing: -0.03em; */
+}
+.universal-header {
+  font-size: 100px;
+  line-height: 73.52%;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+}
+.universal-text {
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: -0.03em;
 }
 .buy-button {
   position: absolute;
@@ -69,11 +87,11 @@ a {
 }
 .main {
   position: relative;
+  margin: 0 auto;
   padding-bottom: 68px;
 }
 .main__header {
   padding: 0 10px 32px 0;
-
   font-size: 150px;
   line-height: 156px;
   font-weight: 700;
@@ -83,10 +101,8 @@ a {
 .main__text {
   position: relative;
   margin: 0 auto;
-  width: 430px;
-  font-size: 25px;
-  line-height: 30px;
-  letter-spacing: -0.03em;
+  min-width: 430px;
+  max-width: 438px;
 }
 .main__img {
   margin: -20px 0 0 5px;
@@ -137,9 +153,12 @@ a {
   width: 420px;
 }
 .make-them-your {
+  margin-bottom: 150px;
   width: 100%;
   height: 786px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   background: /*linear-gradient(
       180deg,
@@ -150,8 +169,29 @@ a {
   background-position: 50%;
   cursor: pointer;
 }
-.make-them-your__header-and-text {
+.make-them-your__header-and-text > *:not(:last-child) {
+  margin-bottom: 39px;
 }
+.make-them-your__header {
+  margin-left: -3px;
+  width: 560px;
+  color: #ff25c2;
+}
+.make-them-your__text {
+  width: 671px;
+}
+.shock-training__header-and-text > *:not(:last-child) {
+  margin-bottom: 80px;
+}
+.shock-training__header {
+  margin-left: -3px;
+  width: 676px;
+  color: #ff25c2;
+}
+.shock-training__text {
+  width: 507px;
+}
+
 /* 
 
 */
@@ -173,4 +213,10 @@ a {
 }
 .footer__link {
   cursor: pointer;
+}
+.footer__copyright {
+  font-size: 35px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #ff25c2;
 }
