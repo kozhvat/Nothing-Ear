@@ -180,16 +180,56 @@ a {
 .make-them-your__text {
   width: 671px;
 }
+/* 
+*/
+.shock-training {
+  padding-bottom: 150px;
+}
+.shock-training__header-and-text {
+}
 .shock-training__header-and-text > *:not(:last-child) {
   margin-bottom: 80px;
 }
 .shock-training__header {
-  margin-left: -3px;
   width: 676px;
   color: #ff25c2;
 }
 .shock-training__text {
   width: 507px;
+}
+
+.waterproof::before {
+  content: '';
+  display: block;
+  margin: auto;
+  padding-bottom: 23px;
+  width: 54px;
+  height: 54px;
+  background: url(../resources/img/png/waterproof.png) 18px 22px no-repeat,
+    url(../resources/img/png/pink-circle.png) no-repeat;
+}
+.auto-stop::before {
+  content: '';
+  display: block;
+  margin: auto;
+  padding-bottom: 23px;
+  width: 54px;
+  height: 54px;
+  background: url(../resources/img/png/auto-stop.png) 18px 22px no-repeat,
+    url(../resources/img/png/pink-circle.png) no-repeat;
+}
+.case-charging::before {
+  content: '';
+  display: block;
+  margin: auto;
+  padding-bottom: 23px;
+  width: 54px;
+  height: 54px;
+  background: url(../resources/img/png/case-charging.png) 18px 22px no-repeat,
+    url(../resources/img/png/pink-circle.png) no-repeat;
+}
+
+.shock-training__text::before {
 }
 
 /* 
