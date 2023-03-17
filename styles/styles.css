@@ -182,12 +182,8 @@ button {
 .make-them-your__text {
   width: 671px;
 }
-/* 
-*/
 .shock-training {
   padding-bottom: 150px;
-}
-.shock-training__header-and-text {
 }
 .shock-training__header-and-text > *:not(:last-child) {
   margin-bottom: 80px;
@@ -301,8 +297,6 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-.contacts__item {
 }
 .contacts__link {
   font-weight: 700;
